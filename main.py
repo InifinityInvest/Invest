@@ -117,7 +117,7 @@ async def profile(message: Message):
         invested = ned[id][1]
         refs = ned[id][3]
         znach = ned[id][5]
-    if balance + invested < 15:
+    if balance + invested < 3:
         check = "0.00"
     else:
         check = balance + invested

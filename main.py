@@ -26,7 +26,7 @@ def update_money():
         json.dump(templates, f)
         f.close()
 schedule.every().day.at("00:00").do(update_money)
-@bot.on.message(text='начать')
+@bot.on.message(text='Начать')
 async def main(message: Message):
     with open('base.json', 'r') as f:
         templates = json.load(f)
